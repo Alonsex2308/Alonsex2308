@@ -3,9 +3,14 @@
     border-style: 10px;
 }
 
+p 
+{
+    width: 200px;
+    margin-top: 10px;
+}
 #borde
 {
-    border-style: 10px;
-    border-width: 1em;
+    border-style: double;
+    border-width: 2px;
     border-color: aqua;
-  }
+}
