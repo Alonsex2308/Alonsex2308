@@ -5,8 +5,7 @@
 
 #borde
 {
-    border-top-width: 10px;
-    border-right-width: 1em;
-    border-bottom-width: thick;
-    border-left-width: thin;
+    border-style: 10px;
+    border-width: 1em;
+    border-color: aqua;
   }
