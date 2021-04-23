@@ -1,4 +1,11 @@
-.borde
+p
+{
+    width: auto;
+    color: aquamarine;
+}
+
+
+#borde
 {
     border-style: double;
     border-width: 2px;
