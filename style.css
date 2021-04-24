@@ -30,6 +30,12 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+#cuadro{
+	border: rgba(17, 74, 231, 0.986) 3px solid;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 5px;
+}
  /*líneas de CSS las usaremos para dar estilo a la cabecera:*/
  #main-header {
 	background:#333;
@@ -96,9 +102,15 @@ nav {
 /*Con estos estilos aplicaremos diseño al contenido:*/
 
                 #main-content {
+<<<<<<< HEAD
                     background-i: rgb(255, 255, 255);
                     width: 90%;
                     max-width: 800px;
+=======
+                    background-image: rgb(255, 255, 255);
+                    width: 100%;
+                    max-width: 1000px;
+>>>>>>> 845c9b522d1b8de613230006c2e33c9422fc3de2
                     margin: 20px auto;
                     box-shadow: 0 0 10px rgba(0,0,0,.1);
                 }
@@ -109,7 +121,7 @@ nav {
                     }
                     #main-footer {
                         background: #333;
-                        color: white;
+                        color: rgb(255, 255, 255);
                         text-align: center;
                         padding: 10px;
                         margin-top: 20px;
