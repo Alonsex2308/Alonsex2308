@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/************Estilos Globales**********************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: linear-gradient(rgba(204,245,251,1),rgba(166,190,199,1)), url(images/fondodepagina4.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+div.logo img {
+    width: 10em;
+}
+.franja {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.icon_menu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(8, 8, 8);
+    display: block;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    font-size: 1.5em;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 50px;
+    z-index: 1000;
+    transition: height 0.5s linear;
+    height: 0;
+    overflow: hidden;
+}
+
+.mostrar {
+    height: 300px;
+}
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #2cfb19;
+}
+
+.link:hover {
+    background: #77fae4;
+}
+
+.seleccionado {
+    background: #027fd3;
+}
+
+h1.titulo{
+    color:rgb(28, 42, 224);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Pacifico', cursive;
+    margin-right: 30px;
+}
+
+.boton_cabecera {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #d30203;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.boton_cabecera:hover{
+    background: #d30203;
+}
