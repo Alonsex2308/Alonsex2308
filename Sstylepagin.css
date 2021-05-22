@@ -26,10 +26,10 @@ p {
 	margin: 0 0 1.5em 0;
 }
 
-img {
+/*img {
 	max-width: 75%;
 	height: auto;
-}
+}*/
 
 #cuadro{
     border: rgba(17, 74, 231, 0.986) 3px solid;
@@ -177,10 +177,10 @@ nav {
                         .conteiner-all p{
                             font-family: Georgia, 'Times New Roman', Times, serif;
                             font-size: 18px;
-                            font-weight: 80;
+                            font-weight: 40;
                             
                         }
-                        .conteiner-all img-container {
+                        .conteiner-all .img-container {
                             box-sizing: border-box;
                             -webkit-box-sizing: border-box;
                             float: left;
@@ -189,6 +189,6 @@ nav {
                             
 
                           }
-                          .conteiner-all img-container img{
-                            width: 50%;
+                          .conteiner-all .img-container img{
+                            width: 70PX;
                           }
