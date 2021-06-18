@@ -8,21 +8,28 @@
 }
 body{
     font-family: Georgia;
-    padding: 90px 20px 0;
+    padding: 0px 0px 0;
 }
 
 .header{
-    background:dodgerblue;
+  
+
+}
+h1.titulo {
+    background:rgb(26, 145, 243);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.nav{
+    background:rgba(9, 214, 118, 0.849);
+    display: flex;
+    justify-content: space-between;
     height: 80px;
-    position: fixed;
+ 
     width: 100%;
     top: 0;
     left: 0;
-
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
 
 }
 .nav-link{
@@ -124,9 +131,9 @@ body{
 .carrusel{
     width: 210px;
     margin: auto;
-    perspective: 1000px;
+    perspective: 800px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 8px;
     
 }
 .content-carrousel{
@@ -183,9 +190,9 @@ body{
 /*******para las sub paginas*****/
 .title{
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
     color: blue;
-    margin-top: 250px;
+    margin-top: 100px;
     font-weight: 8em;
     padding: 6em;
 }
@@ -194,14 +201,14 @@ body{
     max-width: auto;
     height: 430px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     justify-content: center;
-    margin: 7px 23px 90px 12px;
+    margin-top: 209px;
 
 }
 .contenido .cards{
-    width: 330px;
-    height: 430px;
+    width: 250px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: 0 2px rgb(46, 4, 233);
     overflow: hidden;
@@ -214,8 +221,8 @@ body{
     box-shadow: 0 12px 16px rgb(0,0,0,0.2);
 }
 .contenido .cards img{
-    width: 330px;
-    height: 220px;
+    width: 250px;
+    height: 150px;
 }
 .contenido .cards h4{
     font-weight: 600;
@@ -243,9 +250,9 @@ body{
     max-width: auto;
     height: 430px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     justify-content: center;
-    margin: 7px 23px 90px 12px;
+    margin-top: 209px;
 
 }
 .contenido2 .cards2{
@@ -285,10 +292,164 @@ body{
 
 }
 /******fin de contenido******/
+@media (max-width: 768px){
+    .title{
+        text-align: center;
+        font-size: 15px;
+        color: blue;
+        margin-top: 50px;
+        font-weight: 4em;
+        padding: 2em;
+    }
+    .contenido{
+        width: 50%;
+        max-width: auto;
+        height: 130px;
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: center;
+        margin-top: 89px;
+    
+    }
+    .contenido .cards{
+        width: 95px;
+        height: 120px;
+        border-radius: 5px;
+        box-shadow: 0 2px rgb(46, 4, 233);
+        overflow: hidden;
+        margin: 5px;
+       
+    }
+    .contenido .cards:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+    }
+    .contenido .cards img{
+        width: 115px;
+        height: 80px;
+    }
+    .contenido .cards h4{
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .contenido .cards p{
+        padding: 0 6px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+        margin-top: 5px;
+    }
+    .contenido .cards a{
+        font-weight: 500;
+        text-decoration: none;
+        color:#3498db;
+        margin-top: 5px;
+    
+    }
+
+}
+
+/*****contacto*****/
+form{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:cornflowerblue;
+    padding: 0 45px 0;
+    box-shadow:  0 0 6px 0 rgb(26, 145, 243);
+    border-radius: 10px;
+    
+
+}
+.form h1{
+    padding: 10px;
+}
+.form{
+    width: 100%;
+    padding: 0 45px 0;
+    
+    
+}
+.form .h1{
+    text-align: center;
+    font-weight: 700;
+}
+form .grupo{
+    position: relative;
+    margin: 8px ;
+
+}
+input{
+    background: none;
+    color: seashell;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94,91,93);
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top:-14px;
+    font-size: 12px;
+    color #2196f3;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: seashell;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}
+
 /*****PIE DE PAGINA****/
 /*******pie de pagina******/
 .footer{
-    background:cornflowerblue;
+    background:#6495ed;
     padding: 0 6px;
     text-align: center;
     margin-top: 16px;
