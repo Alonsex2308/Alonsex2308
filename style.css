@@ -1,152 +1,186 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	background: #3010e7; 
-	font-size: 1em;
-	line-height: 1.5em;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-	font-size: 2.3em;
-	line-height: 1.3em;
-	margin: 15px 0;
-	text-align: center;
-	font-weight: 300;
+h1.titulo{
+
+    color: white;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 42px;
+    margin: 0 0 0 auto;
+
+
 }
-h4 {
-	font-size: 1.1em;
-	line-height: 0.8em;
-	margin: 3px 10;
-	text-align: center;
-	font-weight: 50;
-}
-p {
-	margin: 0 0 1.5em 0;
+p{
+    margin-bottom: 1.0em;
+    text-align: justify;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-#cuadro{
-	border: rgba(17, 74, 231, 0.986) 3px solid;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding: 5px;
-}
-
- /*líneas de CSS las usaremos para dar estilo a la cabecera:*/
- #main-header {
-	background:#333;
-	color: white;
-	height: 150px;
-}	
-	#main-header a {
-		color: rgb(14, 1, 1);
-	}
-
-/*
- * Logo
- */
-#logo-header {
-	float: left;
-	padding: 15px 0 0 20px;
-	text-decoration: none;
-}
-	#logo-header:hover {
-		color: #0b76a6;
-	}
+header{
+    background:cornflowerblue;
+    color:darkblue;
+    padding: 0.1em 0;
+    font-size: 12px;
 	
-	#logo-header .site-name {
-		display: block;
-		font-weight: 400;
-		font-size: 1.2em;
-	}
-	
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 200;
-		font-size: 0.8em;
-		color: #999;
-	}
-	
-
-/*
- * Navegación
- */
-nav {
-	float: right;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
-	nav ul {
-		margin: 0;
-		padding: 10;
-		list-style: none;
-		padding-right: 400px;
-	}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.navigation{
+	background: cornflowerblue;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 	
-		nav ul li {
-			display: inline-block;
-			line-height: 20px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-			
-				nav ul li a:hover {
-					background: #212427;   /*esto es para darle resalte al cuadro de cabcera:*/
-				}
-/*Con estos estilos aplicaremos diseño al contenido:*/
+    background: cornflowerblue;
 
-                #main-content {
-                    background-image: rgb(255, 255, 255);
-                    width: 90%;
-                    max-width: 800px;
-                    margin: 20px auto;
-                    box-shadow: 0 0 10px rgba(0,0,0,.1);
-                }
-                
-                    #main-content header,
-                    #main-content .content {
-                        padding: 40px;
-                    }
-                    #main-footer {
-                        background: #333;
-                        color: white;
-                        text-align: center;
-                        padding: 10px;
-                        margin-top: 20px;
-                    }
-                        #main-footer p {
-                            margin: 5;
-                        }
-                        
-                        #main-footer a {
-                            color: white;
-                        }
-                        #main-header {
-                            background: #333;
-                            color: white;
-                            height: 80px;
-                            
-                            width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-                            left: 0; /* Posicionamos la cabecera al lado izquierdo */
-                            top: 0; /* Posicionamos la cabecera pegada arriba */
-                            position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-                        }
-                        body {
-                            margin: 0;
-                            padding: 0;
-                            font-family: Helvetica, Arial, sans-serif;
-                            color: rgb(19, 9, 9);
-                            background: #f2f2f2; 
-                            font-size: 1em;
-                            line-height: 1.5em;
-                            
-                            padding-top: 50px; /* Relleno superior igual a la altura de la cabecera*/
-                        }
+}
+.logo{
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    align-content: flex-start;
+    
+
+}
+.menu-icon{
+    display: none;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+
+}
+    .navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+         .navigation ul li a:hover{
+            background: teal;
+
+        }
+
+.slider{
+    width: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    border-radius: 5%;
+    margin-top: 140px;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+.main{
+    padding-top: 1.5em;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+    margin: auto;
+}
+
+.contenido .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenido .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenido .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.contenido .card h4{
+    font-weight: 600;
+}
+
+.contenido .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contenido .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}

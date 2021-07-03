@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Lucida Sans Unicode', Verdana;    
     color: #333;
@@ -6,13 +7,18 @@
     margin: 0;
     
 }
+body{
 
-h1{
+}
 
-    color: blue;
+h1.titulo{
+
+    color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 1.5em ;
+    font-family: 'Tangerine', cursive;
+    font-size: 42px;
+    padding: 0.1em ;
+    margin-top: 9px;
 
 }
 p{
@@ -23,11 +29,12 @@ p{
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
+   
 }
 header{
     background:cornflowerblue;
     color:darkblue;
-    padding: 1em 0;
+    padding: 0.1em 0;
     font-size: 12px;
 
     position: fixed;
@@ -96,7 +103,7 @@ header a{
 .slider img{
     width: 100%;
     border-radius: 5%;
-    margin-top: 81px;
+    margin-top: 116px;
 }
 
 @keyframes cambio{
@@ -172,13 +179,6 @@ header a{
     transform: scale(1.15);
 }
 
-/*******pie de pagina******/
-.footer{
-    background:cornflowerblue;
-    padding: 1em 0;
-    text-align: center;
-    margin-top: 6rem;
-}
 
 @media only screen and (max-width: 767px){
     .menu-icon{
@@ -216,22 +216,24 @@ header a{
 .contenido{
     width: 100%;
     max-width: auto;
-    height: 430px;
+    height: 430px;  
     display: flex;
-    flex-wrap: inherit;
     justify-content: center;
-    margin-top: 209px;
+    
+    flex-wrap: wrap;
+    
 
 }
 .contenido .cards{
-    width: 250px;
-    height: 350px;
+    width: 290px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0 2px rgb(46, 4, 233);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.20s;
+    background: #fcf7f7;
 }
 .contenido .cards:hover{
     transform: translateY(-15px);
@@ -260,3 +262,219 @@ header a{
 
 }
 /********fin de contenido*******/
+/****pie de página******/
+/**EL footer*/
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background:cornflowerblue;
+
+}
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 5px 30px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+
+.box .content:before { 
+    position:absolute;
+    content: "";
+    top: -10;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+
+}
+.box .content::after {
+    position:  absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+
+}
+
+.left .contend p{
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+.left .content .social a {
+    padding: 0 2px;
+}
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #793af0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.left .content .social a span:hover {
+    background: #f3f8ee;
+
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #793af0;
+    height: 45px;
+    width:  45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition:  0.3s;  
+    cursor: pointer;
+
+}
+.center .content .fas:hover {
+    background: #f3f8ee;
+}
+
+.center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.right  form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 3px;
+    color: #f8f6f6;
+    
+}
+.right  form .msg {
+    margin-top: 15px;
+}
+
+.right  form input, .right  form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #fdfdfd;
+
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right  form input:focus,
+.right form textarea:focus {
+    outline-color: #3498db;
+}
+.right form input {
+    height: 35px;
+
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.right form .btn button:hover {
+    background: rgb(235, 223, 223);
+
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #048bfa;
+
+}
+
+.bottom center span { 
+    color: hsl(240, 83%, 93%);
+}
+
+.bottom center a {
+    color: #f12020;
+    text-decoration: none;
+
+}
+.bottom center a:hover {
+    text-decoration: underline;
+
+}
+@media screen and (max-width:900px) {
+    .contenido{
+        width: 100%;
+        max-width: auto;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+    .contenido .cards{
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-shadow: 0 2px rgb(46, 4, 233);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.20s;
+    }
+    .contenido .cards:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+    }
+    .contenido .cards img{
+        width: auto;
+        height: auto;
+    }
+
+
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box {
+        margin: 5px 0; 
+
+    }
+}
