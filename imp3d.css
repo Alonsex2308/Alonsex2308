@@ -125,7 +125,7 @@ header a{
     padding-top: 1.5em;
 }
 
-/*******fotos abajo*****/
+/*******menu responsive*****/
 .portafolio{
    /* max-width: 100%;*/
     width: 100%;
@@ -181,10 +181,25 @@ header a{
 
 
 @media only screen and (max-width: 767px){
+    h1.titulo{
+
+        color: white;
+        text-align: center;
+        font-family: 'Tangerine', cursive;
+        font-size: 12px;
+        padding: 0.1em ;
+        margin-top: 2px;
+    }
+    .logo{
+        letter-spacing: 0.5px;
+        font-size: 0.1em;
+        align-content: flex-start;
+    }
     .menu-icon{
         display: block;
         cursor: pointer;
         padding: 0.5rem 1rem;
+        color: white;
     }
     .navigation {
         width: 100%;
@@ -213,53 +228,60 @@ header a{
 }
 
 /*******para las sub paginas*****/
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #2216cf;
+    margin-top: 0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
 .contenido{
     width: 100%;
-    max-width: auto;
-    height: 430px;  
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
-    
     flex-wrap: wrap;
-    
-
+    justify-content: auto;
+    margin: auto;
 }
-.contenido .cards{
-    width: 290px;
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 0 2px rgb(46, 4, 233);
+
+.contenido .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(6, 17, 167, 0.979);
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition: all 0.20s;
-    background: #fcf7f7;
+    transition: all 0.25s;
 }
-.contenido .cards:hover{
+
+.contenido .card:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+    box-shadow: 0 12px 16px rgba(6, 17, 167, 0.979);
 }
-.contenido .cards img{
-    width: 250px;
-    height: 150px;
+
+.contenido .card img{
+    width: 310px;
+    height: 200px;
 }
-.contenido .cards h4{
+
+
+.contenido .card h4{
     font-weight: 600;
-    margin-top: 5px;
 }
-.contenido .cards p{
-    padding: 0 5px;
-    font-size: 12px;
+
+.contenido .card p{
+    padding: 0 1rem;
+    font-size: 14px;
     font-weight: 300;
-    text-align: justify;
-    margin-top: 1px;
 }
-.contenido .cards a{
+
+.contenido .card a {
     font-weight: 500;
     text-decoration: none;
-    color:#3498db;
-    margin-top: 5px;
-
+    color: #3498db;
 }
 /********fin de contenido*******/
 /****pie de página******/
@@ -279,17 +301,35 @@ footer {
 .main-content .box {
     flex-basis: 50%;
     padding: 5px 30px;
-}
 
+}
+.info{
+    color: white;
+}
+.for{
+    text-decoration:orangered;
+    color:white;
+    text-align: center;
+    background-position: center;
+
+    cursor: pointer;
+    
+    
+}
+.fo:hover{
+    background: #f3f8ee;
+}
 .box h2 {
     font-size: 1.125rem;
     font-weight:600;
     text-transform: uppercase;
+    color: white;
 }
 
 .box .content {
     margin: 20px 0 0 0;
     position: relative;
+    color: white;
 }
 
 
@@ -358,6 +398,7 @@ footer {
     font-size: 1.0625rem;
     font-weight: 500;
     padding-left: 10px;
+    color: white;
 }
 
 .center .content .phone {
@@ -367,7 +408,7 @@ footer {
 .right  form .text {
     font-size: 1.0625rem;
     margin-bottom: 3px;
-    color: #f8f6f6;
+    color: #ffffff;
     
 }
 .right  form .msg {

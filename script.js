@@ -13,3 +13,15 @@ jQuery("document").ready(function($){
     }
     });
 });
+
+const navToggle = document.querySelector("formular.html");
+const navMenu = document.querySelector(".formular.html");
+
+navToggle.addEventListener("click", () =>{
+    navMenu.classList.toggle("nav-menu_visible");
+    if (navMenu.classList.contains("nav-menu_visble")){
+        navToggle.setAttribute("arial-label", "Cerrar menu");
+    } else {
+        navToggle.setAttribute("arial-label", "Abrir menu");
+    }
+});
