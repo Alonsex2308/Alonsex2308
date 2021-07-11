@@ -267,6 +267,22 @@ h1.titulo {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(6, 17, 167, 0.979);
 }
+.robotica{
+    margin: 0 auto 0;
+    width: 1120px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(132, 1, 165, 0.979);
+    margin-top: 30px;
+}
+.robotica .h2{
+    text-decoration: blue;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+}
+.robotica:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(6, 17, 167, 0.979);
+}
 /*******para las sub paginas*****/
 
 .contenido{
