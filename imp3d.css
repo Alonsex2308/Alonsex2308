@@ -97,11 +97,11 @@ header a{
     animation-direction: alternate;
 }
 .slider li{
-    width: 100%;
+    width: 80%;
     list-style: none;
 }
 .slider img{
-    width: 100%;
+    width: 80%;
     border-radius: 5%;
     margin-top: 116px;
 }
@@ -118,6 +118,7 @@ header a{
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+    
 
 }
 
@@ -226,6 +227,27 @@ header a{
     
             }
 }
+/***contenido***/
+.histo{
+    margin: 1px auto 1px;
+    width: 1200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(197, 113, 4, 0.979);
+    margin-top:30px;
+}
+.histo h1,h2{
+    color:blue;
+    text-align: left;
+    margin: 0 auto 10px;
+}
+.histo p{
+    text-align: justify;
+    font-family: "wasp";
+    font-size: 18px;
+    padding: 5px;
+}
+
 
 /*******para las sub paginas*****/
 .title{
@@ -241,14 +263,16 @@ header a{
     width: 1120px;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgba(4, 197, 36, 0.979);
+    margin-top:30px;
    
   
 }
-.impresion .h2{
+.impresion .indicador{
     text-decoration: blue;
+    color: rgba(4, 197, 36, 0.979);
     text-align: center;
     padding: 8px;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .impresion:hover{
     transform: translateY(-15px);
@@ -294,12 +318,16 @@ header a{
     padding: 0 1rem;
     font-size: 14px;
     font-weight: 300;
+    color: darkblue;
+    text-align: justify;
+    margin-top: 10px;
+
 }
 
 .contenido .card a {
-    font-weight: 500;
+    font-weight: 800;
     text-decoration: none;
-    color: #3498db;
+    color: #69db34;
 }
 /********fin de contenido*******/
 /****pie de página******/
@@ -310,6 +338,7 @@ footer {
     bottom: 0px;
     width: 100%;
     background:cornflowerblue;
+    margin-top: 20px;
 
 }
 .main-content {

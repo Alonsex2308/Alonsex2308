@@ -194,31 +194,34 @@ h1.titulo {
 }
 /*****fin de carrusel****/
 .sub-contenido{
-    font-size: 60px;
+    font-size: 45px;
     margin: 14px;
-    text-align: center;
+    text-align: justify;
     margin-top: 270px;
     font-family:'Tangerine', cursive;
     color: blue;
+    
 }
 .impresion3d{
     margin: 0 auto 0;
     width: 1120px;
     border-radius: 8px;
-    box-shadow: 4px 4px 4px rgba(4, 197, 36, 0.979);
-   
+    box-shadow: 4px 4px 4px rgba(4, 197, 36, 0.979); 
   
 }
-.impresion3d .h2{
+
+.impresion3d .indicador{
     text-decoration: blue;
+    color: rgba(4, 197, 36, 0.979);
     text-align: center;
     padding: 8px;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .impresion3d:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(6, 17, 167, 0.979);
 }
+
 .ia{
     margin: 0 auto 0;
     width: 1120px;
@@ -226,10 +229,11 @@ h1.titulo {
     box-shadow:4px 4px 4px rgba(209, 97, 5, 0.979);
     margin-top: 30px;
 }
-.ia .h2{
-    text-decoration: blue;  
+.ia .indicador{
+    text-decoration: blue; 
+    color: rgba(209, 97, 5, 0.979);;
     text-align: center;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .ia:hover{
     transform: translateY(-15px);
@@ -242,10 +246,11 @@ h1.titulo {
     box-shadow: 4px 4px 4px rgba(209, 29, 5, 0.979);
     margin-top: 30px;
 }
-.Biotecnologia .h2{
+.Biotecnologia .indicador{
     text-decoration: blue;
+    color:rgba(209, 29, 5, 0.979);
     text-align: center;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .Biotecnologia:hover{
     transform: translateY(-15px);
@@ -258,10 +263,11 @@ h1.titulo {
     box-shadow: 4px 4px 4px rgba(189, 209, 5, 0.979);
     margin-top: 30px;
 }
-.vehiculos_autonomos .h2{
+.vehiculos_autonomos .indicador{
     text-decoration: blue;
+    color:rgba(189, 209, 5, 0.979);
     text-align: center;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .vehiculos_autonomos:hover{
     transform: translateY(-15px);
@@ -274,10 +280,11 @@ h1.titulo {
     box-shadow: 4px 4px 4px rgba(132, 1, 165, 0.979);
     margin-top: 30px;
 }
-.robotica .h2{
+.robotica .indicador{
     text-decoration: blue;
+    color:rgba(132, 1, 165, 0.979);
     text-align: center;
-    font-family: 'Tangerine', cursive;
+    font-family: 'swap', cursive;
 }
 .robotica:hover{
     transform: translateY(-15px);
@@ -324,12 +331,18 @@ h1.titulo {
     padding: 0 1rem;
     font-size: 14px;
     font-weight: 300;
+    color: darkblue;
+    text-align: justify;
+    margin-top: 10px;
 }
 
 .contenido .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #790fcf;
+    border-radius: 2px;
+    margin-top: 10px;
+
 }
 
 /**EL footer*/
@@ -567,3 +580,4 @@ footer {
 
     }
 }
+
