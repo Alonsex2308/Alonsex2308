@@ -548,7 +548,55 @@ footer {
         width: auto;
         height: auto;
     }
-
+    .histo{
+        margin: 1px auto 1px;
+        width: 100%;
+        max-width: auto;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 8px 8px 8px rgba(197, 113, 4, 0.979);
+        margin-top:30px;
+    }
+    .histo h1,h2{
+        color:blue;
+        text-align: left;
+        margin: 0 auto 10px;
+    }
+    .histo p{
+        text-align: justify;
+        font-family: "wasp";
+        font-size: 18px;
+        padding: 5px;
+    }
+    .impresion{
+        margin: 0 auto 0;
+        width: 100%;
+        max-width: auto;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 4px 4px 4px rgba(4, 197, 36, 0.979);
+        margin-top:30px;
+       
+      
+    }
+    .impresion .indicador{
+        text-decoration: blue;
+        color: rgba(4, 197, 36, 0.979);
+        text-align: center;
+        overflow: hidden;
+        padding: 8px;
+        font-family: 'swap', cursive;
+    }
+    .impresion:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(6, 17, 167, 0.979);
+    }
 
 
     footer {
